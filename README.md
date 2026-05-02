@@ -30,10 +30,19 @@ Read [`problem_statement.md`](./problem_statement.md) for the full task spec, in
 ├── README.md                       # You are here
 ├── code/                           # ← Build your agent here
 │   └── main.py                     #   Entry point (rename/extend as you like)
+│   └── build_index.py
+│   └── classifier.py
+│   └── llm.py
+│   └── processor.py
+│   └── retriever.py
+│   └── risk.py
+│   └── temp.py
+│   └── utils.py
 ├── data/                           # Local-only support corpus (no network needed)
 │   ├── hackerrank/                 #   HackerRank help center
 │   ├── claude/                     #   Claude Help Center export
 │   └── visa/                       #   Visa consumer + small-business support
+│   └── embeddings.npl
 └── support_tickets/
     ├── sample_support_tickets.csv  # Inputs + expected outputs (for development)
     ├── support_tickets.csv         # Inputs only (run your agent on these)
