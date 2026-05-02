@@ -44,7 +44,7 @@ We designed a **hybrid AI system** that combines:
 
 ## ⚙️ System Architecture
 
-Checkout :   [`README.md`](./core/README.md)
+Checkout :   [`README.md`](./code/README.md)
 
 ```text
 User Ticket
