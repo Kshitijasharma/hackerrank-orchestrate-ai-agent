@@ -6,10 +6,118 @@ Goal : Build a terminal-based AI agent that triages real support tickets across 
 
 Problem Statement :  [`problem_statement.md`](./problem_statement.md)
 
----
-## Repository layout
+# 🤖 HackerRank Orchestrate AI Agent
 
+An intelligent **terminal-based AI support agent** that triages and responds to real-world support tickets across:
+
+- 🧑‍💻 HackerRank  
+- 🤖 Claude  
+- 💳 Visa  
+
+Built in a **24-hour hackathon**, this system combines **RAG (Retrieval-Augmented Generation), LLM reasoning, and safety guardrails** to produce **accurate, grounded, and reliable responses**.
+
+---
+
+## 🎯 Problem
+
+Support tickets are:
+
+* noisy
+* ambiguous
+* sometimes risky (fraud, billing, account access)
+
+The challenge:
+
+Convert messy user queries into **structured decisions + safe responses** using ONLY the provided support corpus.
+
+---
+
+## 🧠 Solution Overview
+
+We designed a **hybrid AI system** that combines:
+
+* 🔍 Retrieval (RAG) → fetch relevant support docs
+* 🤖 LLM reasoning → understand & generate responses
+* ⚖️ Rule-based safety layer → enforce escalation for high-risk cases
+
+---
+
+## ⚙️ System Architecture
+
+Checkout :   [`README.md`](./core/README.md)
+
+```text
+User Ticket
+   ↓
+Preprocessing (subject + issue)
+   ↓
+Hybrid Retrieval (Dense + Sparse)
+   ↓
+LLM Reasoning (classification + response)
+   ↓
+Safety Layer (risk override)
+   ↓
+Structured Output (CSV)
 ```
+
+---
+
+## ⚡ Demo
+
+**Input Ticket:**
+
+> "My Visa card was charged twice for the same transaction"
+
+**Output:**
+
+* Status: `escalated`
+* Product Area: `billing`
+* Request Type: `product_issue`
+
+**Response:**
+Duplicate charges may indicate a billing issue or transaction error. Please contact your issuing bank to initiate a chargeback...
+
+**Justification:**
+High financial risk detected → escalation required
+
+---
+
+## 🔍 Key Features
+
+### ✅ Hybrid Retrieval (RAG)
+
+* Dense (embeddings) + Sparse (TF-IDF)
+* Improves relevance and reduces hallucination
+
+### ✅ Structured AI Reasoning
+
+* Outputs strict JSON:
+
+  * `status`
+  * `product_area`
+  * `response`
+  * `justification`
+  * `request_type`
+
+### ✅ Safety-First Design
+
+* Fraud / billing / security → auto escalation
+* Prevents unsafe or incorrect responses
+
+### ✅ Cost Optimization
+
+* Precomputed embeddings (cached locally)
+* Reduced token usage drastically
+
+### ✅ Deterministic Overrides
+
+* Combines LLM intelligence with rule-based control
+
+---
+
+## 📂 Repository Structure
+
+```text
 .
 ├── AGENTS.md                       # Rules for AI coding tools + transcript logging
 ├── problem_statement.md            # Full task description and I/O schema
@@ -35,61 +143,74 @@ Problem Statement :  [`problem_statement.md`](./problem_statement.md)
     └── output.csv                  # RESULTs
 ```
 
+---
 
-Checkout [`README.md`](./code/README.md) inside /code for complete pipeline flow.
+## 🧾 Output Format
 
+Each ticket produces:
 
-## Requirements: 
-
-A terminal-based agent that, for each row in `support_tickets/support_tickets.csv`, produces:
-
-| Column         | Allowed values                                          |
-| -------------- | ------------------------------------------------------- |
-| `status`       | `replied`, `escalated`                                  |
-| `product_area` | most relevant support category / domain area            |
-| `response`     | user-facing answer grounded in the provided corpus      |
-| `justification`| concise explanation of the routing/answering decision   |
-| `request_type` | `product_issue`, `feature_request`, `bug`, `invalid`    |
-
-Hard requirements (from `problem_statement.md`):
-
-- Must be **terminal-based**.
-- Must use **only the provided support corpus** (no live web calls for ground-truth answers).
-- Must **escalate** high-risk, sensitive, or unsupported cases instead of guessing.
-- Must avoid hallucinated policies or unsupported claims.
-
-Beyond that you are free to bring your own approach — RAG, vector DBs, tool use, structured output, agent frameworks, classical ML, or anything else.
+| Column          | Description               |
+| --------------- | ------------------------- |
+| `status`        | replied / escalated       |
+| `product_area`  | domain classification     |
+| `response`      | grounded user answer      |
+| `justification` | reasoning behind decision |
+| `request_type`  | issue classification      |
 
 ---
 
-## Core : 
-
-All of your work belongs in [`code/`](./code/). The repo ships with an empty `code/main.py` you can grow into your full agent — add more modules (`agent.py`, `retriever.py`, `classifier.py`, etc.) next to it as needed.
-
-Conventions:
-
-- Written a **README inside `code/`** describing how to install dependencies and run your agent.
-- Added keys(api) inside .env.
-- Saved responses to `support_tickets/output.csv`.
-
----
-
-## Quickstart
-
-Clone this repository:
+## 🚀 Quickstart
 
 ```bash
 git clone https://github.com/Kshitijasharma/hackerrank-orchestrate-ai-agent.git
+cd hackerrank-orchestrate-ai-agent/code
+python main.py
+
+
 ```
-Used Python to build this proejct.
 
 ---
 
-Results will be announced on May 15, 2026
+## 🔒 Constraints
+
+* Uses ONLY local support corpus (no external knowledge)
+* Avoids hallucinations
+* Escalates high-risk cases safely
 
 ---
 
-## Results : 
+## 📊 Results
 
-Checkout support_tickets/output.csv. 
+Final outputs available at:
+
+```bash
+support_tickets/output.csv
+```
+
+---
+
+## 🧠 Key Learnings
+
+* LLMs need **retrieval + constraints** to be reliable
+* Pure AI → unsafe
+* Hybrid systems → production-ready
+
+---
+
+## 🏁 Hackathon
+
+Built for **HackerRank Orchestrate (May 2026)**
+Results announced: **May 15, 2026**
+
+---
+
+## ✨ Author
+
+**Kshitija Sharma**
+
+---
+
+## ⭐ If you found this interesting
+
+Give it a star ⭐ and explore the architecture!
 
