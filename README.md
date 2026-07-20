@@ -6,7 +6,7 @@ Goal : Build a terminal-based AI agent that triages real support tickets across 
 
 Problem Statement :  [`problem_statement.md`](./problem_statement.md)
 
-# 🤖 HackerRank Orchestrate AI Agent
+# HackerRank Orchestrate AI Agent
 
 An intelligent **terminal-based AI support agent** that triages and responds to real-world support tickets across:
 
@@ -22,7 +22,7 @@ Built in a **24-hour hackathon**, this system combines **RAG (Retrieval-Augmente
 
 
 
-## 🎯 Problem
+## Problem
 
 Support tickets are:
 
@@ -36,7 +36,7 @@ Convert messy user queries into **structured decisions + safe responses** using 
 
 ---
 
-## 🧠 Solution Overview
+## Solution Overview
 
 We designed a **hybrid AI system** that combines:
 
@@ -46,7 +46,7 @@ We designed a **hybrid AI system** that combines:
 
 ---
 
-## ⚙️ System Architecture
+## System Architecture
 
 Checkout :   [`README.md`](./code/README.md)
 
@@ -66,7 +66,7 @@ Structured Output (CSV)
 
 ---
 
-## ⚡ Demo
+## Demo
 
 **Input Ticket:**
 
@@ -86,7 +86,7 @@ High financial risk detected → escalation required
 
 ---
 
-## 🔍 Key Features
+## Key Features
 
 ### ✅ Hybrid Retrieval (RAG)
 
@@ -119,7 +119,7 @@ High financial risk detected → escalation required
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```text
 .
@@ -149,7 +149,7 @@ High financial risk detected → escalation required
 
 ---
 
-## 🧾 Output Format
+## Output Format
 
 Each ticket produces:
 
@@ -175,7 +175,7 @@ python main.py
 
 ---
 
-## 🔒 Constraints
+## Constraints
 
 * Uses ONLY local support corpus (no external knowledge)
 * Avoids hallucinations
@@ -183,7 +183,7 @@ python main.py
 
 ---
 
-## 📊 Results
+## Results
 
 Final outputs available at:
 
@@ -193,7 +193,7 @@ support_tickets/output.csv
 
 ---
 
-## 🧠 Key Learnings
+## Key Learnings
 
 * LLMs need **retrieval + constraints** to be reliable
 * Pure AI → unsafe
@@ -201,16 +201,12 @@ support_tickets/output.csv
 
 ---
 
-## 🏁 Hackathon
+## Hackathon
 
 Built for **HackerRank Orchestrate (May 2026)**
 Results announced: **May 15, 2026**
 
----
 
-## ✨ Author
-
-**Kshitija Sharma**
 
 ---
 
