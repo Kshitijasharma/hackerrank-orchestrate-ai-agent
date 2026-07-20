@@ -10,16 +10,15 @@ Problem Statement :  [`problem_statement.md`](./problem_statement.md)
 
 An intelligent **terminal-based AI support agent** that triages and responds to real-world support tickets across:
 
-- 🧑‍💻 HackerRank  
-- 🤖 Claude  
-- 💳 Visa  
+- HackerRank  
+- Claude  
+- Visa  
 
 Built in a **24-hour hackathon**, this system combines **RAG (Retrieval-Augmented Generation), LLM reasoning, and safety guardrails** to produce **accurate, grounded, and reliable responses**.
 
 ---
 
 <img width="2816" height="1368" alt="Gemini_Generated_Image_luiqx7luiqx7luiq" src="https://github.com/user-attachments/assets/6e9dd440-6553-40f4-abaa-15e245cc9a49" />
-
 
 
 ## Problem
@@ -40,9 +39,9 @@ Convert messy user queries into **structured decisions + safe responses** using 
 
 We designed a **hybrid AI system** that combines:
 
-* 🔍 Retrieval (RAG) → fetch relevant support docs
-* 🤖 LLM reasoning → understand & generate responses
-* ⚖️ Rule-based safety layer → enforce escalation for high-risk cases
+* Retrieval (RAG) → fetch relevant support docs
+* LLM reasoning → understand & generate responses
+* Rule-based safety layer → enforce escalation for high-risk cases
 
 ---
 
@@ -163,7 +162,7 @@ Each ticket produces:
 
 ---
 
-## 🚀 Quickstart
+## Quickstart
 
 ```bash
 git clone https://github.com/Kshitijasharma/hackerrank-orchestrate-ai-agent.git
