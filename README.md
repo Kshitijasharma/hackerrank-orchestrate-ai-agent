@@ -18,7 +18,6 @@ Built in a **24-hour hackathon**, this system combines **RAG (Retrieval-Augmente
 
 ---
 
-<img width="2816" height="1368" alt="Gemini_Generated_Image_luiqx7luiqx7luiq" src="https://github.com/user-attachments/assets/6e9dd440-6553-40f4-abaa-15e245cc9a49" />
 
 
 ## Problem
