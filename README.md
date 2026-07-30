@@ -1,6 +1,4 @@
-# HackerRank Orchestrate
-
-**HackerRank Orchestrate** 24-hour hackathon (May 1–2, 2026).
+# HackerRank Orchestrate:
 
 Goal : Build a terminal-based AI agent that triages real support tickets across three product ecosystems; **HackerRank**, **Claude**, and **Visa** — using only the support corpus shipped in this repo.
 
@@ -37,7 +35,7 @@ Convert messy user queries into **structured decisions + safe responses** using 
 
 ## Solution Overview
 
-We designed a **hybrid AI system** that combines:
+I have designed a **hybrid AI system** that combines:
 
 * Retrieval (RAG) → fetch relevant support docs
 * LLM reasoning → understand & generate responses
@@ -200,14 +198,6 @@ support_tickets/output.csv
 
 ---
 
-## Hackathon
-
-Built for **HackerRank Orchestrate (May 2026)**
-Results announced: **May 15, 2026**
-
-
-
----
 
 ## ⭐ If you found this interesting
 
