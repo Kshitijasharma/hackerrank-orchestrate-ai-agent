@@ -17,6 +17,7 @@ An intelligent **terminal-based AI support agent** that triages and responds to 
 Built in a **24-hour hackathon**, this system combines **RAG (Retrieval-Augmented Generation), LLM reasoning, and safety guardrails** to produce **accurate, grounded, and reliable responses**.
 
 ---
+<img width="655" height="222" alt="Screenshot 2026-07-30 105731" src="https://github.com/user-attachments/assets/6c636d41-6d41-418c-9101-31d5ec676a8d" />
 
 
 
