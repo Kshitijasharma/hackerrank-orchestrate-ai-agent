@@ -2,10 +2,11 @@
 
 This directory contains the core logic for the Support Ticket Triage AI Agent. It implements RAG Pipeline using Azure OpenAI to process, analyze, and resolve customer support tickets intelligently.
 
-<img width="692" height="308" alt="1" src="https://github.com/user-attachments/assets/8493322b-f8ab-4042-823c-fda08a2fbd7c" />
+<!-- <img width="692" height="308" alt="1" src="https://github.com/user-attachments/assets/8493322b-f8ab-4042-823c-fda08a2fbd7c" />
 
-<img width="616" height="418" alt="2" src="https://github.com/user-attachments/assets/e11b1061-e442-4abf-8e6d-85dfc56cb78d" />
+<img width="616" height="418" alt="2" src="https://github.com/user-attachments/assets/e11b1061-e442-4abf-8e6d-85dfc56cb78d" /> -->
 
+<img width="1774" height="887" alt="252b4ee8-8cec-42a4-9e31-9bd2d85db3f3" src="https://github.com/user-attachments/assets/e0386858-5f7a-47fe-8f91-727fe49532a5" />
 
 
 ## Architecture & Modules: 
